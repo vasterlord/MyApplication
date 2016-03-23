@@ -1,11 +1,15 @@
 package com.example.yulian.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity  {
     TextView textView3;
@@ -28,7 +32,11 @@ public class MainActivity extends AppCompatActivity  {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (v.getId() == R.id.button)
+                {
+                    Intent i = new Intent(MainActivity.this , Sign_up.class);
+                    startActivity(i);
+                }
             }
         });
         button1.setOnClickListener(new View.OnClickListener() {
