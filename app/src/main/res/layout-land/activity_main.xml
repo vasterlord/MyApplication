@@ -93,6 +93,6 @@
         android:textColor="#eb7113"
         android:textStyle="bold|italic"
         android:textSize="@dimen/abc_dialog_padding_material"
-        android:layout_marginLeft="200dp" />
+        android:layout_marginLeft="180dp" />
 
 </FrameLayout>
