@@ -19,7 +19,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/EmptyStr"
         android:id="@+id/textView9"
-        android:layout_gravity="center_horizontal|top"
+        android:layout_gravity="top|left|center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="35dp" />
+        android:layout_marginLeft="140dp" />
 </FrameLayout>

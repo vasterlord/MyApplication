@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity  {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (v.getId() == R.id.button2) {
-                    String str = editText.getText().toString();
+                if (v.getId() == R.id.button) {
+                    String str = editText3.getText().toString();
 
                     Intent i = new Intent(MainActivity.this, Log_in.class);
                     i.putExtra("Username", str);

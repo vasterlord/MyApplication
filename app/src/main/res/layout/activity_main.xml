@@ -88,10 +88,11 @@
         android:layout_height="wrap_content"
         android:text="ABOUT PROGRAM"
         android:id="@+id/button4"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginTop="30dp"
         android:textColor="#eb7113"
         android:textStyle="bold|italic"
-        android:textSize="@dimen/abc_dialog_padding_material" />
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:layout_marginLeft="0dp" />
 
 </FrameLayout>
