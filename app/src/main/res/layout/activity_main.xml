@@ -42,7 +42,7 @@
         android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Login"
+        android:text="Username"
         android:id="@+id/textView3"
         android:layout_column="48"
         android:layout_weight="2"
@@ -64,7 +64,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log in"
+        android:text="LOG IN"
         android:id="@+id/button"
         android:layout_gravity="right|top"
         android:layout_marginTop="165dp"
@@ -86,7 +86,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up"
+        android:text="SIGN UP HERE"
         android:id="@+id/button2"
         android:layout_gravity="left|top"
         android:layout_marginTop="165dp"
