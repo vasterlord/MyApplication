@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity  {
     TextView textView3;
     TextView textView;
     Button button;
-    Button button1;
+    Button button4;
     Button button2;
     EditText editText;
     EditText editText3;
@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity  {
         editText= (EditText) findViewById(R.id.editText);
         editText3= (EditText) findViewById(R.id.editText3);
         button = (Button) findViewById(R.id.button);
-        button1 = (Button) findViewById(R.id.button1);
+        button4 = (Button) findViewById(R.id.button4);
         button2 = (Button) findViewById(R.id.button2);
-        button1.setEnabled(true);
+        button4.setEnabled(true);
 
 
 
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
