@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity  {
     TextView textView;
     Button button;
     Button button1;
+    Button button2;
     EditText editText;
     EditText editText3;
     @Override
@@ -28,11 +29,18 @@ public class MainActivity extends AppCompatActivity  {
         editText3= (EditText) findViewById(R.id.editText3);
         button = (Button) findViewById(R.id.button);
         button1 = (Button) findViewById(R.id.button1);
+        button2 = (Button) findViewById(R.id.button2);
         button1.setEnabled(false);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (v.getId() == R.id.button)
+                button1.setEnabled(true);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.button2)
                 {
                     Intent i = new Intent(MainActivity.this , Sign_up.class);
                     startActivity(i);
