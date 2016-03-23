@@ -30,13 +30,27 @@ public class MainActivity extends AppCompatActivity  {
         button = (Button) findViewById(R.id.button);
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
-        button1.setEnabled(false);
+        button1.setEnabled(true);
+
+
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                button1.setEnabled(true);
+                if (v.getId() == R.id.button2) {
+                    String str = editText.getText().toString();
+
+                    Intent i = new Intent(MainActivity.this, Log_in.class);
+                    i.putExtra("Username", str);
+                    startActivity(i);
+                }
             }
         });
+
+
+
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +61,10 @@ public class MainActivity extends AppCompatActivity  {
                 }
             }
         });
+
+
+
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
