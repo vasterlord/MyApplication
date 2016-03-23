@@ -10,8 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.Intent;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  {
+    DatabaseHelper helper = new DatabaseHelper(this);
     TextView textView3;
     TextView textView;
     Button button;
@@ -21,8 +23,7 @@ public class MainActivity extends AppCompatActivity  {
     EditText editText3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        super.onCreate(savedInstanceState);   setContentView(R.layout.activity_main);
         textView = (TextView) findViewById(R.id.textView);
         textView3 = (TextView) findViewById(R.id.textView3);
         editText= (EditText) findViewById(R.id.editText);
@@ -35,15 +36,27 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (v.getId() == R.id.button) {
                     String str = editText3.getText().toString();
+                    String pass = editText.getText().toString();
+                    String password = helper.searchPass(str);
+                    if (!pass.equals(password))
+                    {
+                        Intent i = new Intent(MainActivity.this, Log_in.class);
+                        i.putExtra("Username", str);
+                        startActivity(i);
+                    }
+                    else
+                    {
+                        Toast temp = Toast.makeText(MainActivity.this, "Usename and password dont mutch", Toast.LENGTH_SHORT);
+                        temp.show();
+                    }
 
-                    Intent i = new Intent(MainActivity.this, Log_in.class);
-                    i.putExtra("Username", str);
-                    startActivity(i);
+
                 }
             }
         });
@@ -54,9 +67,8 @@ public class MainActivity extends AppCompatActivity  {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (v.getId() == R.id.button2)
-                {
-                    Intent i = new Intent(MainActivity.this , Sign_up.class);
+                if (v.getId() == R.id.button2) {
+                    Intent i = new Intent(MainActivity.this, Sign_up.class);
                     startActivity(i);
                 }
             }
