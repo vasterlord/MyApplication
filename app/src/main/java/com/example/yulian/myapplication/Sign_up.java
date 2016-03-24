@@ -26,7 +26,8 @@ public class Sign_up extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
-
+        button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(this);
 }
 
     @Override
@@ -42,8 +43,8 @@ public class Sign_up extends Activity implements View.OnClickListener {
             EditText editText5 = (EditText) findViewById(R.id.editText5);
             EditText editText6 = (EditText) findViewById(R.id.editText6);
             EditText editText7 = (EditText) findViewById(R.id.editText7);
-            button3 = (Button) findViewById(R.id.button3);
-            button3.setEnabled(true);
+
+
 
             String namestr = editText2.getText().toString();
             String emailstr = editText4.getText().toString();
