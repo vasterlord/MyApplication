@@ -23,7 +23,7 @@
         android:layout_gravity="top|left|center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="130dp"
-        android:src = "@drawable/avatarItEducationN"
+        android:src = "@drawable/avatar"
         android:textColor="#287ad9" />
 
     <ImageView

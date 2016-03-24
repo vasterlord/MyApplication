@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView textView3;
     TextView textView;
     Button button;
-    Button button4;
     Button button2;
     EditText editText;
     EditText editText3;
@@ -29,12 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editText= (EditText) findViewById(R.id.editText);
         editText3= (EditText) findViewById(R.id.editText3);
         button = (Button) findViewById(R.id.button);
-        button4 = (Button) findViewById(R.id.button4);
         button2 = (Button) findViewById(R.id.button2);
-        button4.setEnabled(true);
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
-        button4.setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
