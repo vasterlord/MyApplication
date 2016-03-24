@@ -53,16 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Intent y = new Intent(MainActivity.this, Log_in.class);
                     y.putExtra("Username", str);
                     startActivity(y);
-                    str = "";
-                    pass = "";
                 }
                 else
                 {
                     Toast temp = Toast.makeText(MainActivity.this, "Usename and password dont mutch", Toast.LENGTH_SHORT);
                     temp.show();
                 }
-                break;
-            case R.id.button4:
                 break;
         }
     }

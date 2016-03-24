@@ -11,7 +11,8 @@
         android:id="@+id/textView8"
         android:layout_gravity="left|top"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginLeft="20dp"
+        android:textColor="#9827ba" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,5 +22,13 @@
         android:id="@+id/textView9"
         android:layout_gravity="top|left|center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="130dp" />
+        android:layout_marginLeft="130dp"
+        android:src = "@drawable/avatarItEducationN"
+        android:textColor="#287ad9" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center" />
 </FrameLayout>
