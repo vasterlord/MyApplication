@@ -12,7 +12,7 @@
     android:orientation="horizontal"
     android:foreground="#05a750cf"
     android:measureAllChildren="false"
-    android:background="#0b0b0c">
+    android:background="@drawable/backgroundthird">
 
     <TextView
         android:layout_width="140dp"
@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_column="48"
         android:layout_weight="2"
-        android:textColor="#f41111"
+        android:textColor="#44ede1"
         android:textStyle="normal|italic"
         android:width="@dimen/abc_action_button_min_width_overflow_material"
         android:textSize="@dimen/abc_dialog_padding_material"
@@ -73,7 +73,8 @@
         android:layout_marginTop="165dp"
         android:textColor="#1faac9"
         android:textStyle="bold|italic"
-        android:textSize="@dimen/abc_dialog_padding_material" />
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:background="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -84,6 +85,7 @@
         android:layout_marginTop="165dp"
         android:textColor="#5cc272"
         android:textStyle="bold|italic"
-        android:textSize="@dimen/abc_dialog_padding_material" />
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:background="#ffffff" />
 
 </FrameLayout>

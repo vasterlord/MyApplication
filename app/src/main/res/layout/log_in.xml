@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f0dbf2">
+    android:background="@drawable/backgroundtwo">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,7 +13,9 @@
         android:layout_gravity="left|top"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:textColor="#9827ba" />
+        android:textColor="#f48a19"
+        android:textSize="@dimen/DP20"
+        android:background="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,16 +26,18 @@
         android:layout_gravity="top|left|center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="130dp"
-        android:textColor="#287ad9" />
+        android:textColor="#44ede1"
+        android:textSize="@dimen/DP20"
+        android:background="#ffffff" />
 
     <ImageView
-        android:layout_width="398dp"
-        android:layout_height="374dp"
+        android:layout_width="481dp"
+        android:layout_height="452dp"
         android:id="@+id/imageView"
         android:src = "@drawable/avatar"
-        android:layout_gravity="center_horizontal|top"
+        android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:background="#98f8ca"
+        android:background="@android:color/background_light"
         android:foreground="#edd8f4" />
     android:
 </FrameLayout>
