@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:textColor="#f48a19"
-        android:textSize="@dimen/DP20"
+        android:textSize="@dimen/abc_select_dialog_padding_start_material"
         android:background="#ffffff" />
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="130dp"
         android:textColor="#44ede1"
-        android:textSize="@dimen/DP20"
+        android:textSize="@dimen/abc_select_dialog_padding_start_material"
         android:background="#ffffff" />
 
     <ImageView
