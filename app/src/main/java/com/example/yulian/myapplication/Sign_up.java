@@ -61,6 +61,7 @@ public class Sign_up extends Activity implements View.OnClickListener {
                 c.setEmail(emailstr);
                 c.setPass(pass1str);
                 helper.insertContact(c);
+
             }
         }
     }

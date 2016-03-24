@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.content.Intent;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener   {
     DatabaseHelper helper = new DatabaseHelper(this);
     TextView textView3;
     TextView textView;
@@ -32,52 +32,38 @@ public class MainActivity extends AppCompatActivity  {
         button4 = (Button) findViewById(R.id.button4);
         button2 = (Button) findViewById(R.id.button2);
         button4.setEnabled(true);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (v.getId() == R.id.button) {
-                    String str = editText3.getText().toString();
-                    String pass = editText.getText().toString();
-                    String password = helper.searchPass(str);
-                    if (!pass.equals(password))
-                    {
-                        Intent i = new Intent(MainActivity.this, Log_in.class);
-                        i.putExtra("Username", str);
-                        startActivity(i);
-                    }
-                    else
-                    {
-                        Toast temp = Toast.makeText(MainActivity.this, "Usename and password dont mutch", Toast.LENGTH_SHORT);
-                        temp.show();
-                    }
-
-
-                }
-            }
-        });
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (v.getId() == R.id.button2) {
-                    Intent i = new Intent(MainActivity.this, Sign_up.class);
-                    startActivity(i);
-                }
-            }
-        });
-
-
-
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
+        button.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
-
-
+    @Override
+    public void onClick(View v) {
+        switch (v.getId())
+        {
+            case R.id.button2:
+                Intent i = new Intent(MainActivity.this, Sign_up.class);
+                startActivity(i);
+                break;
+            case R.id.button:
+                String str = editText3.getText().toString();
+                String pass = editText.getText().toString();
+                String password = helper.searchPass(str);
+                if (!pass.equals(password))
+                {
+                    Intent y = new Intent(MainActivity.this, Log_in.class);
+                    y.putExtra("Username", str);
+                    startActivity(y);
+                    str = "";
+                    pass = "";
+                }
+                else
+                {
+                    Toast temp = Toast.makeText(MainActivity.this, "Usename and password dont mutch", Toast.LENGTH_SHORT);
+                    temp.show();
+                }
+                break;
+            case R.id.button4:
+                break;
+        }
+    }
 }
