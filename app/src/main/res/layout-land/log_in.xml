@@ -27,12 +27,12 @@
         android:textColor="#287ad9" />
 
     <ImageView
-        android:layout_width="398dp"
-        android:layout_height="374dp"
+        android:layout_width="286dp"
+        android:layout_height="269dp"
         android:id="@+id/imageView"
         android:src = "@drawable/avatar"
-        android:layout_gravity="center_horizontal|top"
-        android:layout_marginTop="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="10dp"
         android:background="#98f8ca"
         android:foreground="#edd8f4" />
     android:

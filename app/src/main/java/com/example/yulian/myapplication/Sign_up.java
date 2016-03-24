@@ -43,9 +43,6 @@ public class Sign_up extends Activity implements View.OnClickListener {
             EditText editText5 = (EditText) findViewById(R.id.editText5);
             EditText editText6 = (EditText) findViewById(R.id.editText6);
             EditText editText7 = (EditText) findViewById(R.id.editText7);
-
-
-
             String namestr = editText2.getText().toString();
             String emailstr = editText4.getText().toString();
             String unamestr = editText7.getText().toString();

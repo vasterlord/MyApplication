@@ -11,7 +11,8 @@
     android:weightSum="1"
     android:orientation="horizontal"
     android:foreground="#05a750cf"
-    android:measureAllChildren="false">
+    android:measureAllChildren="false"
+    android:background="#0b0b0c">
 
     <TextView
         android:layout_width="140dp"
@@ -36,7 +37,8 @@
         android:id="@+id/editText"
         android:layout_gravity="center_horizontal|top"
         android:layout_marginTop="118dp"
-        android:layout_marginLeft="0dp" />
+        android:layout_marginLeft="0dp"
+        android:background="#fbfbfb" />
 
     <TextView
         android:layout_width="112dp"
@@ -46,7 +48,7 @@
         android:id="@+id/textView3"
         android:layout_column="48"
         android:layout_weight="2"
-        android:textColor="#1927ec"
+        android:textColor="#ea6a1b"
         android:textStyle="normal|italic"
         android:width="@dimen/abc_action_bar_default_height_material"
         android:textSize="@dimen/abc_dialog_padding_material"
@@ -59,7 +61,8 @@
         android:id="@+id/editText3"
         android:layout_gravity="left|top"
         android:layout_marginTop="35dp"
-        android:layout_marginLeft="0dp" />
+        android:layout_marginLeft="0dp"
+        android:background="#fbfbfb" />
 
     <Button
         android:layout_width="wrap_content"

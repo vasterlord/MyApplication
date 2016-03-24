@@ -11,7 +11,8 @@
     android:weightSum="1"
     android:orientation="horizontal"
     android:foreground="#05a750cf"
-    android:measureAllChildren="false">
+    android:measureAllChildren="false"
+    android:background="#0b0b0c">
 
     <TextView
         android:layout_width="140dp"
@@ -36,7 +37,8 @@
         android:id="@+id/editText"
         android:layout_gravity="center_horizontal|top"
         android:layout_marginTop="118dp"
-        android:layout_marginLeft="0dp" />
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff" />
 
     <TextView
         android:layout_width="112dp"
@@ -59,7 +61,8 @@
         android:id="@+id/editText3"
         android:layout_gravity="left|top"
         android:layout_marginTop="35dp"
-        android:layout_marginLeft="0dp" />
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
