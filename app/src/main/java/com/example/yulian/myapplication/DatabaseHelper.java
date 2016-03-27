@@ -20,7 +20,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_PASS = "pass";
     SQLiteDatabase db;
     private static final String TABLE_CREATE = "create table contacts (id integer primary key not null ," +
-            "name text not null , uname text not null , email text not null , pass text not null); ";
+            "name text not null , uname text unique not null , email text unique not null , pass text not null); ";
     public DatabaseHelper(Context context)
     {
         super(context , DATABASE_NAME , null , DATABASE_VERSION);
@@ -72,4 +72,5 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(query);
         this.onCreate(db);
     }
+   
 }
