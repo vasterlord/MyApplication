@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity   {
                     } else {
                         Toast temp = Toast.makeText(MainActivity.this, "Usename and password dont mutch", Toast.LENGTH_SHORT);
                         temp.show();
+                        editText.setText("");
+                        editText3.setText("");
                     }
                 }
             }

@@ -36,7 +36,7 @@
         android:text="SIGN UP"
         android:id="@+id/button3"
         android:layout_gravity="left|top"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="385dp"
         android:textColor="#8123b7"
         android:textStyle="bold|italic"
         android:textSize="@dimen/abc_dialog_padding_material"
@@ -54,7 +54,7 @@
         android:textStyle="normal|italic"
         android:width="@dimen/abc_action_button_min_width_overflow_material"
         android:textSize="@dimen/abc_dialog_padding_material"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="68dp"
         android:layout_gravity="left|center_vertical"
         android:background="#ffffff" />
 
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText5"
         android:layout_gravity="left|center_vertical"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="23dp"
         android:layout_marginLeft="0dp"
         android:background="#ffffff" />
 
@@ -75,7 +75,7 @@
         android:id="@+id/editText6"
         android:layout_gravity="left|center_vertical"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:background="#ffffff" />
 
     <TextView
@@ -141,7 +141,7 @@
         android:textStyle="normal|italic"
         android:width="@dimen/abc_action_button_min_width_overflow_material"
         android:textSize="@dimen/abc_dialog_padding_material"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="227dp"
         android:layout_gravity="left|top"
         android:background="#ffffff" />
 

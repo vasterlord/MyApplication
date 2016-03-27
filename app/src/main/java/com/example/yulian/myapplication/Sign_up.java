@@ -58,7 +58,13 @@ public class Sign_up extends Activity implements View.OnClickListener {
                 c.setEmail(emailstr);
                 c.setPass(pass1str);
                 helper.insertContact(c);
-
+                Toast passok = Toast.makeText(Sign_up.this, "Registration successful", Toast.LENGTH_SHORT);
+                passok.show();
+                editText2.setText("");
+                editText4.setText("");
+                editText5.setText("");
+                editText6.setText("");
+                editText7.setText("");
             }
         }
     }
